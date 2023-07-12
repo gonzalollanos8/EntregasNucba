@@ -35,7 +35,7 @@ header{
 	align-items: center;
 	width: 100%	;
 	padding: 1.5rem;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	box-shadow: 2px 4px rgba(34, 33, 33, 0.027);
 }
