@@ -1,18 +1,6 @@
-:root{
-	--background:#fefefe;
-	--textTitle: #242424;
-	--textDetail:#838383;
-	--linesBorder: #dbdbdb;
-	--cta: #9BCDD2;
-	--ctaHover: #1b98a3;
-	--extra: 	#FF8551;
-}
 @media(max-width:768px){
-    }
+
     #hero{
-        flex-direction: column;
-        align-content:center;
-        justify-content: center;
         text-align: center;
     }
 
@@ -38,7 +26,7 @@
         justify-content: center;
         align-items: center;
     }
-
+}
 @media(max-width:375px){
     .navbar ul{
         flex-direction: column;
@@ -48,7 +36,7 @@
         height: calc(100vh - 100px);
         position: absolute;
         top: 100px;
-        background-color: var(--background);
+        background-color: #fefefe;
         left: 0;
         display: none;
     }
@@ -84,6 +72,4 @@
         height: 200px;
     }
     
-
-
 }
