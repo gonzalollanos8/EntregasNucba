@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Card para producto</title>
 </head>
 <body>
@@ -14,7 +16,10 @@
         <div class="logo">
             <h3>Sneakers.dev</h3>
         </div>
-        <nav>
+        <nav class="navbar">
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu"/>
+
             <ul class="options">
                     <li><a href="#">Home</a></li>
                     <li><a href="#sectionInfo">About</a></li>
@@ -22,29 +27,33 @@
                     <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+
     </header>
 
 
     <main>
-        <section class="heroContainer">
-            <article class="heroContainer-text">
-                <h1>Best Sneakers 👟</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam nesciunt pariatur, optio modi quod laudantium minus iure eaque dolor veniam. Quibusdam odio suscipit porro sequi ducimus omnis molestias! Eum?
-                Quod expedita saepe harum accusamus debitis?
-                </p>
+        <section id="hero">
+            <div class="heroContainer-1">
+                <div class="heroContainer-text">
+                    <h1>Best Sneakers 👟</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam nesciunt pariatur, optio modi quod laudantium minus iure eaque dolor veniam. Quibusdam odio suscipit porro sequi ducimus omnis molestias! Eum?
+                    Quod expedita saepe harum accusamus debitis?
+                    </p>
+                </div>
+            
                 <div class="mark">
-                    <ul>
-                        <li><img src="./img/Adidas logo.png" alt="Adidas"></li>
-                        <li><img src="./img/nike log.png" alt="Nike"></li>
-                        <li><img src="./img/New logo.png" alt="New Balance"></li>
-                        <li><img src="./img/Vans logo.png" alt="Vans"></li>
-                    </ul>
+                        <ul>
+                            <li><img src="./img/Adidas logo.png" alt="Adidas"></li>
+                            <li><img src="./img/nike log.png" alt="Nike"></li>
+                            <li><img src="./img/New logo.png" alt="New Balance"></li>
+                            <li><img src="./img/Vans logo.png" alt="Vans"></li>
+                        </ul>
                 </div>
                 <div class="action">
-                    <button id="principal">see more</button>
-                    <button>learn more</button>
+                        <button id="principal">see more</button>
+                        <button>learn more</button>
                 </div>
-            </article>
+            </div>
             <div class="heroContainer-img">
                 <img src="./img/Nike-Dunk-Low-University-Blue-Side_1200x1200.webp" alt="producto">
             </div>
@@ -55,6 +64,152 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quidem maiores sequi doloribus inventore in totam ipsum dignissimos provident officiis eveniet esse at sed, animi possimus sunt debitis temporibus. Debitis.
             Ex harum sit assumenda aliquid sequi, ut architecto, adipisci hic, deserunt magni id quaerat impedit consectetur optio rerum quasi maxime? Blanditiis placeat laborum repellendus, ratione voluptatem recusandae reprehenderit aspernatur modi.
             Sapiente magnam, officiis ratione reprehenderit quisquam quaerat consequuntur, libero mollitia unde, corporis velit voluptates. Laboriosam ab suscipit labore. Sequi alias ex odio ad accusantium recusandae</p>
+        </section>
+
+        <section id="section-card-description">
+            <div class="card-description">
+                <img src="/img/shirt.svg" alt="shirt">
+                <h3 class="description-title">clothes</h3>
+                <p class="description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque.</p>
+            </div>
+
+            <div class="card-description">
+                <img src="/img/bag.svg" alt="accesory">
+                <h3 class="description-title">accesory</h3>
+                <p class="description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque.</p>
+            </div>
+
+            <div class="card-description">
+                <img src="/img/shoes.svg" alt="shoes">
+                <h3 class="description-title">shoes</h3>
+                <p class="description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque.</p>
+            </div>
+        </section>
+
+<!--        <section id="section-cards">
+            <div class="card">
+                <img src="./img/adidas badbunny white.webp" alt="jordan low">
+                <div class="cardInfo">
+                        <p class="name">Jordan black & white low</p>
+                        <p class="info-detail">Shoes- Unisex</p>
+                    <div class="info-prod">
+                        <span class="info-price">U$D 29.99</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="./img/yeezy.png" alt="jordan low">
+                <div class="cardInfo">
+                        <p class="name">Jordan black & white low</p>
+                        <p class="info-detail">Shoes- Unisex</p>
+                    <div class="info-prod">
+                        <span class="info-price">U$D 29.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./img/CampusBadBunnyCloudWhite.webp" alt="jordan low">
+                <div class="cardInfo">
+                        <p class="name">Jordan black & white low</p>
+                        <p class="info-detail">Shoes- Unisex</p>
+                    <div class="info-prod">
+                        <span class="info-price">U$D 29.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./img/air jordan black low.png" alt="jordan low">
+                <div class="cardInfo">
+                        <p class="name">Jordan black & white low</p>
+                        <p class="info-detail">Shoes- Unisex</p>
+                    <div class="info-prod">
+                        <span class="info-price">U$D 29.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./img/air jordan black low.png" alt="jordan low">
+                <div class="cardInfo">
+                        <p class="name">Jordan black & white low</p>
+                        <p class="info-detail">Shoes- Unisex</p>
+                    <div class="info-prod">
+                        <span class="info-price">U$D 29.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./img/air jordan black low.png" alt="jordan low">
+                <div class="cardInfo">
+                        <p class="name">Jordan black & white low</p>
+                        <p class="info-detail">Shoes- Unisex</p>
+                    <div class="info-prod">
+                        <span class="info-price">U$D 29.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./img/yeezy.png" alt="jordan low">
+                <div class="cardInfo">
+                        <p class="name">Jordan black & white low</p>
+                        <p class="info-detail">Shoes- Unisex</p>
+                    <div class="info-prod">
+                        <span class="info-price">U$D 29.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./img/air jordan black low.png" alt="jordan low">
+                <div class="cardInfo">
+                        <p class="name">Jordan black & white low</p>
+                        <p class="info-detail">Shoes- Unisex</p>
+                    <div class="info-prod">
+                        <span class="info-price">U$D 29.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <section id="section-contact">
+            <div class="contact-left">
+                <div class="contacts-options">
+                    <div class="options-message">
+                        <h2>Contact</h2>
+                            <div class="option">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjhJREFUSEt1lotxKjEMRY86gUoClQQqCVRCOoFXCaQSvbm27JW9u55hAGNLuh9pMfoywJev6VP5JX5endrbj/u2XM5X95OVe3HJ8M2S5oL2MeSTEXkVdK+WXsQmKcPmAbhgfOF2Av8A7fUP+J1DzFwE5P62sAA34CcCfMBeBYFxwDnF/h3sVvTboE5bTY4s8sHgGYHu1ETzash+cD4Gdy9oxvqTyDmPPcEV4Aq89liMgoXmGbDPSpbPb7mo0XKO4Eo0XKoBBn8K8duNX7wUNfDSSzf84PAO4dpBtcDH4aige9YsRoAHcDZ41Y4yKoKlIrnlgdsx3FIuxZmGaI8xIX2D3Q2/9cacbPzAuOAFvwo4id+cIBe0oOm7VQs4Zwaz8KLnBXYNXKWq5L7mxNVUiTM3nG+DY0UwUFTyvL0IaudU3QVc3KqhBgE3LK5zFwPrGkyELhBHo9y8NlxLImQKpk5eesR447wMrm1spkYrqXT4O5wg57R1CG2URJZVgrYWZBV2bczm4mmeNSf8gl9Hq5d48vvDq/j6WUW0Zpz7p3uz90EoJ6G1jvVtc1yqECULv5e59KQ0ml1jXvXx1BOEsKqtIsgJVqO7p1aypl0U1dibXJS6UTzmJZ7lrnkgXkJ86bI5t+ZOLjZLkZug+Rnw154NQcVq/gzAJ+QNquynKaqXuFalX/FZ+mr/L2y7DMINudbjeuKmf83DcytQ+mOQQ8wU7YWf86zO7T6ap2k6W3YJNIz/HftunPkP63v/IHONY+IAAAAASUVORK5CYII="/>
+                            <span>+54 11 5759-3771</span>
+                            </div>
+                            <div class="option">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAnlJREFUSEt1VomRgzAMXHUCnUAlx1USUkmSSsJVEjrRzUqykcHxTAbGyHp2V3IE3SUAFLBHvJudQKD8cqywuexXez93ctSJmuPE52PrW2B3XVc/Tus5bD5R4KaCP6g8+xWcAkRVAxQPAAMEMxR77Btqsewthd4FmFWwV2QLRKfK6fQBxRT7dD4DEeRwOlgC/rvFc4fgBcXasJZgGQR4qGBKWbMazy4F8SqqGwZZBLi5jfwCupVSJRH1EOgSRiOgPPiu2VklsgdOH1YlwJ8K1oCOsC6xPxbxZZILwnnPgggwBL5j5iDeCSP3Ce8bKgOghHVzWR8a+kTWNHZiHWNmNkGwQY2Pss/nGwLC+AvgCWAF5BYQseII4DgRjilILRjangC7CsZWIRaIgZn1FlnzPCve1atC4oDRTRF3QNbQdQlACbKC82KFn+BmjGqMn4CtaTSL7h+FJNOZBRVgU5frl6bvtHmnDyIb+zKH02bPiTtF6cyr3JGZZBKxQnCDYovOpG2BjmXfBXiGBIsA+GRCxP20JHNgqRRMOTXZXMz4UJIDxEBUDaGbwuml40sfNsMuwrNZKE22fplF1q0hwTCrwYgZtV+DHKg1Mm2Iclh8eOVZxHGyqOAn7glvsNLxZi+zQCnreqVckOMhm0veFxwJL3VFNSuNGVYQY0V2gY69sZAOBx+CBWq9wUU+7lVJxdrxYADveLeLji8kp3Ku12FVUbkyqZYXHR3KkQegVm1psNIwZ5k2t0hKctALyRdTimIkN/l2u16ZWSO5iQ4oODV/oMYTpyyHHaELjprrphl26Qr81vqdAi+dnDMsw+67v9NflTa7469NT4i+9w/SXyAyVQdxPQAAAABJRU5ErkJggg=="/>
+                            <span>+54 11 3040-5060</span>
+                            </div>
+                            <div class="option">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAc1JREFUSEulldGRwjAMRJ86CZUcdAKVECphqIR0culEN4rtWMJ27mbOPyREtnZXK1nYlwBaXz+f8ud+lCBod7eMNtRkhyfD9vkgwRgy++Ym2WiTR+tw5fCItMZ20A0OSgLHeAst6ww8gSmWZUy/T0RW0BuwpHT1tDeoJSnadMt/aIVcD9AV4WRV9wyKhU6wocg1iAo2qKOyE8h3rtl2dkqQgkqCFXgJzOWP3625RRj7t+PvEiRYrgm2DQ9gPnRZFXEGvX/IO0zwALnnfMbmAthvb5khzBi5dhiolCh5A99oThGZQI2uHbAK3FRYrKEc0bPAO28yAMU5JSoxqIXfJSqFnxDuKFeBVYUXypzjZ3RnaXY0lmV5oF0X7dppYnDdaCfwJsFXkUTgoU2dRLMDk0TVRflDtG6xmCV5xi6VC+iSE/v6+IbuJMjF6fh9QvdOv4Esgwnq3R0lqj0TnT/qXle/lsGmhKHtFifi94PvD3dGlKii8DUYT5xmyrY0kk1LH1SskoZdsyEOm36/NTG7dZ1Ecs7tvnXlmMNHijYwNWZnXB/fyW4q9lgMCh7ug5DAA+s/jy6iKJdrtH85xw3S1uLdy702UcTfby7PJjL4Aba90hv+hRVHAAAAAElFTkSuQmCC"/>
+                            <span>devsneakers@email.com</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="contacts-options">
+                    <h2>Newsletter</h2>
+                    <div class="input-email">
+                        <input type="value" required="">
+                        <label>
+                            <span style="transition-delay:0ms">E</span><span style="transition-delay:50ms">-</span><span style="transition-delay:100ms">m</span><span style="transition-delay:150ms">a</span><span style="transition-delay:200ms">i</span><span style="transition-delay:250ms">l</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="contact-right">
+                <h2>Find us</h2>
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31197.99741467822!2d-58.513948214813794!3d-34.723196694879206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1689072862666!5m2!1ses-419!2sar"  style="border:8;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
         </section>
     </main>
     <footer>

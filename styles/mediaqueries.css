@@ -1,0 +1,89 @@
+:root{
+	--background:#fefefe;
+	--textTitle: #242424;
+	--textDetail:#838383;
+	--linesBorder: #dbdbdb;
+	--cta: #9BCDD2;
+	--ctaHover: #1b98a3;
+	--extra: 	#FF8551;
+}
+@media(max-width:768px){
+    }
+    #hero{
+        flex-direction: column;
+        align-content:center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .heroContainer-text{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heroContainer-img{
+        display: none;
+    }
+
+    .action{
+        margin: 10px;
+    }
+
+    #section-card-description{
+        flex-wrap: wrap;
+    }
+
+    #section-contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+@media(max-width:375px){
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: calc(100vh - 100px);
+        position: absolute;
+        top: 100px;
+        background-color: var(--background);
+        left: 0;
+        display: none;
+    }
+    .navbar i{
+        display: flex;
+    }
+
+    #toggle-menu:checked ~ ul{
+        display: flex;
+    }
+
+    #hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .action{
+        flex-direction: column;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .mark{
+        flex-wrap: wrap;
+
+    }
+
+    .maps{
+        width: 250px;
+        height: 200px;
+    }
+    
+
+
+}
